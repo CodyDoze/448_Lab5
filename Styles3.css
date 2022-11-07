@@ -1,0 +1,20 @@
+body
+{
+    background-color: #187498;
+}
+p
+{
+    color: #EB5353;
+    font-family: Georgia, 'Times New Roman';
+    font-size: 16pt;
+    padding-right: 50%;
+}
+a
+{
+    color:#EB5353;
+    font-size: 16pt;
+}
+a:hover 
+{
+    color: #F9D923;
+}

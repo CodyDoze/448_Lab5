@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Validator</title>
+</head>
+<body>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd1" pattern="{8,}">
+    <label for="pwdc">Confirm Password:</label>
+    <input type="password" id="pwd2">
+    <button type="button" id="btn" onclick="myFunc()">Validate</button>
+    <div class="error"></div>
+    <script>
+        let password1 = document.querySelector("#pwd1");
+        let password2 = document.querySelector("#pwd2");
+        let btn = document.querySelector("#btn");
+        let errorText = document.querySelector(".error");
+        function myFunc(){
+            if(password1.value != password2.value){
+                alert("the passwords entered don't match");
+            }
+            else if(password1.value.length < 8){
+                alert("the passwords are not at least 8 characters long");
+            }
+            else{
+                alert("Success");
+            }
+    
+        }   
+    </script>
+</body>
+</html>
